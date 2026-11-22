@@ -1,0 +1,21 @@
+{
+  "name": "discord-unblocked",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Discord in the browser through a Cloudflare Worker proxy",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "prepare": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@mercuryworkshop/bare-as-module3": "2.2.5",
+    "@mercuryworkshop/bare-mux": "2.1.9",
+    "@titaniumnetwork-dev/ultraviolet": "3.2.10"
+  },
+  "devDependencies": {
+    "wrangler": "^4.42.0"
+  }
+}
